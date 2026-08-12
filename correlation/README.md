@@ -19,6 +19,8 @@ Rumus yang digunakan untuk menghitung korelasi Pearson adalah
 
 $$r = \frac{\sum (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 (y_i - \bar{y})^2}}$$
 
+[Pearson Correlation](https://github.com/FikriAbdillah01/statistics/blob/ff57baabaa0fd644ac4a2cfc5d2539b8d72a5cca/correlation/correlation_plots.png)
+
 ## Spearman Correlation
 
 Spearman correlation coefficient merupakan metode statistik non parametrik yang digunakan untuk mengukur kekuatan dan arah hubungan antara dua variabel berdasarkan peringkat datanya. Berbeda dengan Pearson yang menggunakan linearitas dari dua variabel yang ber numerik normal, Spearman menilai seberapa baik hubungan tersebut dapat digambarkan menggunakan fungsi monotonik.
