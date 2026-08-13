@@ -28,3 +28,5 @@ Spearman correlation coefficient merupakan metode statistik non parametrik yang 
 Hubungan monotonik berarti ketika nilai satu variabel meningkat, nilai variabel lainnya cenderung ikut meningkat atau justru menurun secara konsisten, meskipun polanya tidak membentuk garis lurus sempurna. Spearman correlation can be used with either continuous or ordinal data, small sample of data, and it is relatively robust to outliers. Formulasi matematika untuk menghitung korelasi ini adalah
 
 $$\rho = 1 - \frac{6\sum d^2_i}{n(n^2-1)}$$
+
+![spearman correlation](https://github.com/FikriAbdillah01/statistics/blob/693ba6d8c6e5a3aa199336fef061577dbb18e97a/correlation/spearman_corr.png)
