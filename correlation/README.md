@@ -1,8 +1,8 @@
 # Correlation
 
-Correlation adalah teknik untuk mengetahui bagaimana perubahan antara dua variabel yang dipasangkan, menyediakan insight apakah ada hubungan diantara mereka berdua. Teknik ini menunjukkan apakah dua variabel memiliki kecenderungan untuk bergerak bersama, dan jika iya, maka kearah mana. Akan ada dua kemungkinan:
+Correlation is a technique used to determine how changes occur between two paired variables, providing insight into whether a statistical relationship exists between them. This technique indicates whether two variables tend to move together and, if so, in what direction. There are two possibilities:
 
-1. Jika nilai korelasi itu positif, maka variable satu akan menaikkan variabel pasangannya.
+1. If the correlation value is positive, then one variable will cause its paired variable to increase.
 2. Jika bernilai negatif, maka variabel satu akan menurunkan variabel pasangannya.
 
 ## Pearson Correlation
