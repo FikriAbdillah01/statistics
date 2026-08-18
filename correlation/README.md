@@ -7,15 +7,15 @@ Correlation is a technique used to determine how changes occur between two paire
 
 ## Pearson 
 
-Pearson Correlation merupakan tolok ukur kekuatan dan arah hubungan antara dua variabel. Nilai koefisien ini berada di antara -1 dan 1 dengan nilai tertinggi menandakan adanya similaritas, sedangkan 0 mengartikan tidak adanya hubungan antara keduanya, dan nilai negatif menandakan keterikatan negatif. Ada beberapa syarat sebelum menggunakan Pearson Correlation
+The Pearson correlation measures the strength and direction of the relationship between two variables. The coefficient value ranges from -1 to 1; the highest values ​​indicate similarity, a value of 0 signifies the absence of a relationship, and negative values ​​indicate a negative association. There are several prerequisites for using the Pearson correlation
 
-1. Variable bersifat kontinu
+1. The variable is continuous.
 
-2. Hubungan antara variabel mendekati linear
+2. The relationship between the variables is approximately linear.
 
-3. Tidak memiliki nilai-nilai outlier yang ekstrim
+3. Does not have extreme outlier values
 
-Rumus yang digunakan untuk menghitung korelasi Pearson adalah
+The formula used to calculate the Pearson correlation is
 
 $$r = \frac{\sum (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 (y_i - \bar{y})^2}}$$
 
@@ -23,9 +23,9 @@ $$r = \frac{\sum (x_i - \bar{x}) (y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 (
 
 ## Spearman 
 
-Spearman correlation coefficient merupakan metode statistik non parametrik yang digunakan untuk mengukur kekuatan dan arah hubungan antara dua variabel berdasarkan peringkat datanya. Berbeda dengan Pearson yang menggunakan linearitas dari dua variabel yang ber numerik normal, Spearman menilai seberapa baik hubungan tersebut dapat digambarkan menggunakan fungsi monotonik.
+The Spearman correlation coefficient is a non-parametric statistical method used to measure the strength and direction of the relationship between two variables based on their data ranks. Unlike the Pearson correlation, which relies on the linearity of two normally distributed numerical variables, Spearman assesses how well the relationship can be described using a monotonic function.
 
-Hubungan monotonik berarti ketika nilai satu variabel meningkat, nilai variabel lainnya cenderung ikut meningkat atau justru menurun secara konsisten, meskipun polanya tidak membentuk garis lurus sempurna. Spearman correlation can be used with either continuous or ordinal data, small sample of data, and it is relatively robust to outliers. Formulasi matematika untuk menghitung korelasi ini adalah
+A monotonic relationship means that as the value of one variable increases, the value of the other variable tends to consistently increase or decrease, even though the pattern does not form a perfectly straight line. Spearman correlation can be used with either continuous or ordinal data or small sample sizes, and it is relatively robust to outliers. The mathematical formula for calculating this correlation is
 
 $$\rho = 1 - \frac{6\sum d^2_i}{n(n^2-1)}$$
 
@@ -33,25 +33,25 @@ $$\rho = 1 - \frac{6\sum d^2_i}{n(n^2-1)}$$
 
 ## Kendall Tau 
 
-Kendall Tau $\tau$ merupakan tolok ukur nonparametrik yang bisa digunakan untuk mengetahui hubungan between two ordinal variables. Variabel tersebut mencakup data kateogis dimana kategori kategorinya memiliki peringkat bermakna, seperti rating pelanggan terhadap kepuasan suatu barang atau jasa dari perusahaan. Persamaan $\tau$ adalah
+Kendall's Tau ($\tau$) is a non-parametric measure used to determine the relationship between two ordinal variables. These variables consist of categorical data where the categories have a meaningful ranking—such as customer satisfaction ratings for a company's goods or services. The $\tau$ equation is
 
 $$\tau = \frac{C - D}{C + D}$$
 
-dengan $C$ mewakili pasangan konkordan (concordant pairs) dan $D$ adalah pasangan yang diskordan (discordant pairs). Sebelum menggunakan rumus, kita harus mengetahui maksud dari concordant and discordant pairs:
+where $C$ represents concordant pairs and $D$ represents discordant pairs. Before using the formula, we must understand the meaning of concordant and discordant pairs:
 
-- Concodant (C): Pasangan data $(X_i, Y_i)$ dan $(X_j, Y_j)$ disebut concordant jika peringkatnya sama. Artinya, jika $X_i > X_j$ maka $Y_i > Y_j$, begitu juga sebaliknya.
+- Concodant (C): The data pair $(X_i, Y_i)$ and $(X_j, Y_j)$ are called concordant if their rank is the same. That is, if $X_i > X_j$ then $Y_i > Y_j$, and vice versa.
 
-- Discordant (D): Pasangan data disebut discordant jika peringkatnya berlawanan. Artinya, jika $X_i < X_j$ maka $Y_i > Y_j$ atau sebaliknya.
+- Discordant (D): A pair of data points is called discordant if their rankings are opposite. This means that if $X_i < X_j$, then $Y_i > Y_j$, or vice versa.
 
-Ada 3 versi rumus Kendall's tau $\tau$, yaitu $\tau_a$, $\tau_b$, dan $\tau_c$.
+There are three versions of the Kendall's tau ($\tau$) formula: $\tau_a$, $\tau_b$, and $\tau_c$..
 
-**Kendall's tau $\tau_a$** digunakan jika semua peringkat unik (tidak ada nilai yang sama atau ties) dengan formulasi matematisnya adalah
+**Kendall's tau $\tau_a$** is used when all ranks are unique (there are no identical values ​​or ties), and its mathematical formulation is
 
 $$\tau_a = \frac{C-D}{\frac{1}{2}n(n-1)}$$
 
-dengan $n$ adalah jumlah sampel dan $\frac{1}{2}n(n-1)$ merupakan jumlah total kombinasi pasangan yang mungkin dari objek n.
+where $n$ is the number of samples and $\frac{1}{2}n(n-1)$ is the total number of possible pairwise combinations of the $n$ objects.
 
-**Kendall's tau $\tau_b$** digunakan jika terdapat nilai yang sama dalam variabel X atau Y. Rumus $\tau_a$ dimodifikasi menjadi
+**Kendall's tau $\tau_b$** is used when there are tied values ​​in variable X or Y. The formula for $\tau_a$ is modified to
 
 $$\tau_b = \frac{C - D}{\sqrt{(N_0 - N_1)(N_0 - N_2)}}$$
 
@@ -59,10 +59,10 @@ $$N_0 = \frac{1}{2} n(n-1)$$
 $$N_1 = \sum_i \frac{1}{2}t_i(t_i -1)$$
 $$N_2 = \sum_j \frac{1}{2}u_j(u_j -1)$$
 
-dengan $N_1$ merupakan koreksi nilai kembar pada variabel X dengan $t_i$ adalah banyaknya nilai kembar ke-$i$ pada X, sedangkan $N_2$ digunakan untuk koreksi nilai kembar pada variabel Y dengan $u_j$ adalah banyaknya nilai kembar ke-$j$ pada Y.
+where $N_1$ represents the tie correction for variable X, with $t_i$ being the number of ties in the $i$-th group of ties in X, while $N_2$ is used for the tie correction for variable Y, with $u_j$ being the number of ties in the $j$-th group of ties in Y.
 
-**Kendall's tau $\tau_c$** dirancang khusus untuk mengukur hubungan antara dua variabel ordinal yang disajikan dalam bentuk tabel kontingensi persegi panjang (dimana tabel ukuran $row \space \times \space column$ tidak simetrik alias $row \neq column$). rumusnya adalah
+**Kendall's tau $\tau_c$** is specifically designed to measure the relationship between two ordinal variables presented in a rectangular contingency table (where the table dimensions—rows $\times$ columns—are asymmetrical, i.e., $\text{rows} \neq \text{columns}$). The formula is
 
 $$\tau_c = \frac{2m (C - D)}{n^2 (m-1)}$$
 
-dengan $n$ adalah total seluruh sampel (total frekuensi dalam tabel) dan $m = min(r,c)$ adalah nilai minimum antara jumlah baris ($r$) dan jumlah kolom ($c$).
+where $n$ is the total sample size (total frequency in the table) and $m = \min(r, c)$ is the minimum value between the number of rows ($r$) and the number of columns ($c$).
